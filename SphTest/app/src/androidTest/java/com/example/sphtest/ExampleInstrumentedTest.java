@@ -2,6 +2,10 @@ package com.example.sphtest;
 
 import android.content.Context;
 
+import com.example.sphtest.cache.SqlManager;
+import com.example.sphtest.net.HttpManager;
+import com.example.sphtest.viewmodel.SphViewModel;
+
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -23,5 +27,11 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
         assertEquals("com.example.sphtest", appContext.getPackageName());
+
+        SqlManager.init(appContext);
+        SphViewModel.init(appContext);
+        HttpManager.init(3000);
+        SphViewModel.init(appContext);
+
     }
 }

@@ -28,6 +28,9 @@ public class SphViewModel {
     private MutableLiveData<List<SaleRecordEntity>> mSaleRecordLiveData = new MutableLiveData<>();
 
     public static void init(Context context){
+        if (context == null){
+            return;
+        }
         if (mSelf == null){
             synchronized (SphViewModel.class){
                 if (mSelf == null){
