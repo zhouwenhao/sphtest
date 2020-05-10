@@ -15,21 +15,11 @@
             android:text="sss"
             android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/test_feild_text"
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/test_bar_chart"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:textColor="#000"
-            android:text="sss"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:id="@+id/test_record_text"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:textColor="#000"
-            android:text="sss"
-            android:textSize="20dp"/>
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"/>
 
 
     </LinearLayout>
